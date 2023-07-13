@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
 
-              //function
+              //function for Floaring
               FloatingQuickAccessBar(screenSize: screenSize),
             ],
           ),
