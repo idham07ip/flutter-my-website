@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_app/widgets/featuredHeading.dart';
+import 'package:flutter_web_app/widgets/featuredTiles.dart';
 import 'package:flutter_web_app/widgets/floatingQuickAccess.dart';
 import 'package:flutter_web_app/widgets/topBarContents.dart';
 
@@ -37,26 +39,39 @@ class _HomePageState extends State<HomePage> {
         child: TopBarContents(_opacity),
         preferredSize: Size(screenSize.width, 70),
       ),
-      body: Column(
-        children: [
-          Stack(
-            children: [
-              Container(
-                child: SizedBox(
-                  height: screenSize.height * 1.0,
-                  width: screenSize.width,
-                  child: Image.asset(
-                    'assets/images/background2.jpg',
-                    fit: BoxFit.cover,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Stack(
+              children: [
+                Center(
+                  child: Container(
+                    child: SizedBox(
+                      height: screenSize.height / 1.6,
+                      width: screenSize.width / 1.3,
+                      child: Image.asset(
+                        'assets/images/background2.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ),
                 ),
-              ),
+                Column(
+                  children: [
+                    //function for Floating
+                    FloatingQuickAccessBar(screenSize: screenSize),
 
-              //function for Floaring
-              FloatingQuickAccessBar(screenSize: screenSize),
-            ],
-          ),
-        ],
+                    //bigText and shortText
+                    FeaturedHeading(screenSize: screenSize),
+
+                    //showImages
+                    FeaturedTiles(screenSize: screenSize),
+                  ],
+                )
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

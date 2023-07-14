@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class FeaturedHeading extends StatelessWidget {
@@ -17,27 +16,26 @@ class FeaturedHeading extends StatelessWidget {
         left: screenSize.width / 15,
         right: screenSize.width / 15,
       ),
-      child:  Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-              Text(
-              'Featured',
-              style: TextStyle(
-                  fontSize: 36,
-                  fontFamily: 'Raleway',
-                  fontWeight: FontWeight.bold,
-                  color:Color(0xFF263b5e)
-              ),
+      child: Row(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Text(
+            'Featured',
+            style: TextStyle(
+                fontSize: 36,
+                fontFamily: 'Raleway',
+                fontWeight: FontWeight.bold,
+                color: Color(0xFFFF735C)),
+          ),
+          Expanded(
+            child: Text(
+              'Clue of the wooden cottage',
+              textAlign: TextAlign.end,
             ),
-                Expanded(
-                  child: Text(
-                    'Clue of the wooden cottage',
-                    textAlign: TextAlign.end,
-                  ),
-                ),
-              ],
-            ),
+          ),
+        ],
+      ),
     );
   }
 }
