@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class InfoText extends StatelessWidget {
   final String type;
@@ -15,17 +16,19 @@ class InfoText extends StatelessWidget {
       children: [
         Text(
           '$type: ',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 16,
-          ),
+          style: GoogleFonts.poppins(
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+              color: Colors.white,
+            ),
         ),
         Flexible(
           child: Text(
             text,
-            style: TextStyle(
-              color: Colors.white,
+            style: GoogleFonts.poppins(
               fontSize: 16,
+              fontWeight: FontWeight.w500,
+              color: Colors.white60,
             ),
           ),
         )

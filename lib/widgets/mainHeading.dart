@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MainHeading extends StatelessWidget {
   const MainHeading({
@@ -19,11 +20,11 @@ class MainHeading extends StatelessWidget {
       child: Text(
         'Knowledge diversity',
         textAlign: TextAlign.center,
-        style: TextStyle(
-          fontSize: 40,
-          fontFamily: 'Montserrat',
-          fontWeight: FontWeight.bold,
-        ),
+        style: GoogleFonts.poppins(
+              fontSize: 40,
+              fontWeight: FontWeight.w500,
+              color: const Color(0xFFFF735C),
+            ),
       ),
     );
   }

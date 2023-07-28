@@ -9,7 +9,7 @@ class MenuDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Color(0xFF6158e6),
+        color: Color(0xFFFF735C),
         child: Padding(
 
           padding: const EdgeInsets.all(16.0),
@@ -27,7 +27,7 @@ class MenuDrawer extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
                 child: Divider(
-                  color: Colors.blueGrey.shade400,
+                  color: Colors.white,
                   thickness: 2,
                 ),
               ),
@@ -41,7 +41,7 @@ class MenuDrawer extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
                 child: Divider(
-                  color: Colors.blueGrey.shade400,
+                  color: Colors.white,
                   thickness: 2,
                 ),
               ),
@@ -55,7 +55,7 @@ class MenuDrawer extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
                 child: Divider(
-                  color: Colors.blueGrey.shade400,
+                  color: Colors.white,
                   thickness: 2,
                 ),
               ),
@@ -70,9 +70,9 @@ class MenuDrawer extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
-                    'Copyright © 2021 | DBestech',
+                    'Copyright © 2023 | Idham Irama Permana',
                     style: TextStyle(
-                      color: Colors.blueGrey.shade300,
+                      color: Colors.white,
                       fontSize: 14,
                     ),
                   ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class BottomBarColumn extends StatelessWidget {
   final String heading;
@@ -6,7 +7,8 @@ class BottomBarColumn extends StatelessWidget {
   final String s2;
   final String s3;
 
-  BottomBarColumn({
+  const BottomBarColumn({
+    super.key,
     required this.heading,
     required this.s1,
     required this.s2,
@@ -16,20 +18,47 @@ class BottomBarColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(bottom: 20.0),
+      padding: const EdgeInsets.only(bottom: 20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             heading,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 18,
+            style: GoogleFonts.poppins(
+              fontSize: 14,
               fontWeight: FontWeight.w500,
+              color: Colors.white,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
+          ),
+
+          //
+          Text(
+            s1,
+            style: GoogleFonts.poppins(
+              fontSize: 14,
+              color: Colors.white60,
+            ),
+          ),
+
+          //
+          Text(
+            s2,
+            style: GoogleFonts.poppins(
+              fontSize: 14,
+              color: Colors.white60,
+            ),
+          ),
+
+          //
+          Text(
+            s3,
+            style: GoogleFonts.poppins(
+              fontSize: 14,
+              color: Colors.white60,
+            ),
           ),
         ],
       ),
